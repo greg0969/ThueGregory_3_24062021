@@ -1,0 +1,32 @@
+@import "./utils/variables";
+@import "./utils/functions";
+@import "./utils/mixins";
+@import "./utils/extensions";
+
+@import "./base/base";
+@import "./base/typography";
+
+@import "./components/buttons";
+
+@import "./layout/header";
+@import "./layout/nav";
+@import "./layout/container";
+@import "./layout/form";
+
+
+body {
+    font-family: "Raboto"; 
+    @include mobile-only;
+}
+
+.fonctionnement {
+    display: flex;
+    flex-direction: column;
+    &__carte {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+
+
