@@ -6,13 +6,33 @@
 /*@import "./base/base";
 @import "./base/typography";
 
-@import "./components/buttons";
+@import "./components/buttons";*/
 
-@import "./layout/header";
-@import "./layout/nav";
+/*@import "./layout/nav";
 @import "./layout/container";
 @import "./layout/form";*/
 
-body {
-    width: 10%;
+.bloc {
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    text-align-last: center;  
+    img {
+        width: $element;
+    }
 } 
+
+.position {
+    flex-direction: row;
+    &__icone {
+        width: 10%;
+        p {
+            margin: 0;
+            .fa-map-marker-alt {
+               width: 10px; 
+            }
+        }
+    }
+}

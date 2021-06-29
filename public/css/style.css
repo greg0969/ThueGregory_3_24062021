@@ -1,12 +1,42 @@
 /*@import "./base/base";
 @import "./base/typography";
 
-@import "./components/buttons";
-
-@import "./layout/header";
-@import "./layout/nav";
+@import "./components/buttons";*/
+/*@import "./layout/nav";
 @import "./layout/container";
 @import "./layout/form";*/
-body {
+.bloc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.logo {
+  text-align-last: center;
+}
+
+.logo img {
+  width: 50%;
+}
+
+.position {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.position__icone {
   width: 10%;
+}
+
+.position__icone p {
+  margin: 0;
+}
+
+.position__icone p .fa-map-marker-alt {
+  width: 10px;
 }
