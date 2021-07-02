@@ -1,10 +1,15 @@
 /*@import "./base/base";
-@import "./base/typography";
 
 @import "./components/buttons";*/
 /*@import "./layout/nav";
 @import "./layout/container";
 @import "./layout/form";*/
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #001534;
+  margin: 0;
+}
+
 .bloc {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -16,6 +21,7 @@
 
 .logo {
   text-align-last: center;
+  padding-top: 20px;
 }
 
 .logo img {
@@ -27,10 +33,17 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  padding-right: 10%;
+  background-color: #eaeaea;
+  -webkit-box-shadow: inset 0px 4px 3px 0px #dddddd;
+          box-shadow: inset 0px 4px 3px 0px #dddddd;
 }
 
 .position__icone {
-  width: 10%;
+  margin-right: 25px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .position__icone p {
@@ -39,4 +52,84 @@
 
 .position__icone p .fa-map-marker-alt {
   width: 10px;
+}
+
+.position__emplacement {
+  font-weight: bold;
+}
+
+.reservation {
+  background-color: #f6f6f6;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 7% 6% 13% 6%;
+  font-size: 15px;
+  text-align: center;
+}
+
+.reservation__titre h1 {
+  margin: 0;
+  padding: 10px 0 10px 0;
+  font-weight: bold;
+}
+
+.reservation__btn {
+  margin-top: 30px;
+  width: 50%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(12%, #9356dc), to(#cb56dc));
+  background: -webkit-linear-gradient(bottom, #9356dc 12%, #cb56dc 100%);
+  background: -o-linear-gradient(bottom, #9356dc 12%, #cb56dc 100%);
+  background: linear-gradient(0deg, #9356dc 12%, #cb56dc 100%);
+  border-radius: 10em;
+  padding: 0 5% 0 5%;
+}
+
+.reservation__btn a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.fonctionnement {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 5% 0 5%;
+}
+
+.fonctionnement__rond {
+  background-color: #9356DC;
+  border-radius: 10em;
+  padding: 5px 10px 5px 10px;
+  color: #FFFFFF;
+}
+
+.fonctionnement .carte ul {
+  width: 100%;
+  padding: 0;
+}
+
+.fonctionnement .carte ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  list-style-type: none;
+}
+
+.fonctionnement .carte ul p {
+  width: 10%;
+  margin: 0;
+}
+
+.fonctionnement .carte ul i {
+  margin: 0 7% 0 6%;
 }
