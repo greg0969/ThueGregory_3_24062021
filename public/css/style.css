@@ -133,3 +133,10 @@ body {
 .fonctionnement .carte ul i {
   margin: 0 7% 0 6%;
 }
+
+.restaurants {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
