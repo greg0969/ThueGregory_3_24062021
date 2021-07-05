@@ -10,6 +10,15 @@ body {
   margin: 0;
 }
 
+a {
+  text-decoration: none;
+  color: #001534;
+}
+
+a:visited {
+  color: #001534;
+}
+
 .bloc {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -33,10 +42,9 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  padding-right: 10%;
-  background-color: #eaeaea;
-  -webkit-box-shadow: inset 0px 4px 3px 0px #dddddd;
-          box-shadow: inset 0px 4px 3px 0px #dddddd;
+  background-color: #f6f6f6;
+  -webkit-box-shadow: inset 0px 4px 3px 0px #d1d1d1;
+          box-shadow: inset 0px 4px 3px 0px #d1d1d1;
 }
 
 .position__icone {
@@ -58,8 +66,14 @@ body {
   font-weight: bold;
 }
 
-.reservation {
+.position__emplacement input {
+  border: none;
   background-color: #f6f6f6;
+  margin: 20px 0 20px 0;
+}
+
+.reservation {
+  background-color: #eaeaea;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -134,9 +148,48 @@ body {
   margin: 0 7% 0 6%;
 }
 
-.restaurants {
+.restaurant {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  background-color: #eaeaea;
+}
+
+.restaurant__carte figure {
+  background-color: white;
+  -webkit-box-shadow: 1px 1px 10px 2px #c3c3c3;
+          box-shadow: 1px 1px 10px 2px #c3c3c3;
+  border-radius: 20px;
+  margin-top: 10px;
+  margin-bottom: 4%;
+}
+
+.restaurant__carte img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
+.restaurant__carte p {
+  margin: 0;
+}
+
+.bg-img-restaurant img {
+  width: 100%;
+}
+
+.menu {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-top-left-radius: 10%;
+  border-top-right-radius: 10%;
+}
+
+.footer img {
+  width: 50%;
 }

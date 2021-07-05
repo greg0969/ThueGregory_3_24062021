@@ -16,7 +16,15 @@ body {
     font-family: 'Roboto', sans-serif;
     color: $font-color;
     margin: $no-margin;
-}  
+}   
+
+a {
+    text-decoration: none;
+    color: $font-color;
+    &:visited {
+        color: $font-color;
+    }
+}
 
 .bloc {
     display: flex;
@@ -33,7 +41,6 @@ body {
 
 .position {
     flex-direction: row;
-    padding-right: 10% ;
     background-color: $bg-color-secondary;
     box-shadow: $box-shadow-header;
     &__icone {
@@ -48,11 +55,16 @@ body {
     }
     &__emplacement {
         font-weight: $bold;
+        input {
+            border: none;
+            background-color: $bg-color-secondary;
+            margin: 20px 0 20px 0;
+        }
     }
 }
 
 .reservation {
-    background-color: $bg-position-color;
+    background-color: $bg-color-position;
     flex-direction: column;
     padding: 7% 6% 13% 6%;
     font-size: 15px;
@@ -104,6 +116,41 @@ body {
     
 }
 
-.restaurants {
+.restaurant {
     flex-direction: column;
+    background-color: $bg-color-position;
+    &__carte figure {
+        background-color: white;
+        box-shadow: 1px 1px 10px 2px #c3c3c3;
+        border-radius: 20px;
+        margin-top: 10px;
+        margin-bottom: 4%;
+    }
+    &__carte img {
+        width: 100%;
+        object-fit: cover;
+        border-top-right-radius:20px ;
+        border-top-left-radius: 20px;
+    }
+    &__carte p {
+        margin: $no-margin;
+    }
+}
+
+.bg-img-restaurant {
+    img {
+        width: 100%;
+    }
+}
+
+.menu {
+    flex-direction: column;
+    border-top-left-radius: 10% ;
+    border-top-right-radius: 10%;
+}
+
+.footer {
+    img {
+        width: 50%;
+    }
 }
