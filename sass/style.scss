@@ -41,7 +41,7 @@ a {
 
 .position {
     flex-direction: row;
-    background-color: $bg-color-secondary;
+    background-color: $bg-color-position;
     box-shadow: $box-shadow-header;
     &__icone {
         margin-right: 25px;
@@ -57,14 +57,14 @@ a {
         font-weight: $bold;
         input {
             border: none;
-            background-color: $bg-color-secondary;
+            background-color: $bg-color-position;
             margin: 20px 0 20px 0;
         }
     }
 }
 
 .reservation {
-    background-color: $bg-color-position;
+    background-color: $bg-color-secondary;
     flex-direction: column;
     padding: 7% 6% 13% 6%;
     font-size: 15px;
@@ -90,20 +90,32 @@ a {
 
 .fonctionnement {
     flex-direction: column;
-    margin: 0 5% 0 5%;
+    margin: 0 5% 40px 5%;
     &__rond {
         background-color: $bg-color-primary;
         border-radius: 10em;
         padding: 5px 10px 5px 10px;
         color: $font-color-secondary;
+        margin-left: -10px;
     }
-    .carte ul {
+    .carte {
+        display: flex;
+        flex-direction: row;
+    }
+    ul {
         width: 100%;
         padding: 0;
+        border-style: none;
+        background-color: $bg-color-secondary;
+        border-radius: 10em;
+        margin-bottom: 20px;
+        box-shadow: $box-shadow-fonctionnement;
         li {
             display: flex;
             flex-direction: row;
             list-style-type: none;
+            padding: 20px 0 20px 0;
+            align-items: center;
         }
         p {
             width: 10%;
@@ -119,22 +131,44 @@ a {
 .restaurant {
     flex-direction: column;
     background-color: $bg-color-position;
+    padding-bottom: 40px;
+    &--margin-left {
+        margin-left: 20px;
+    }
     &__carte figure {
         background-color: white;
         box-shadow: 1px 1px 10px 2px #c3c3c3;
         border-radius: 20px;
-        margin-top: 10px;
-        margin-bottom: 4%;
+        margin: 10px 20px 4% 20px;
     }
-    &__carte img {
-        width: 100%;
-        object-fit: cover;
-        border-top-right-radius:20px ;
-        border-top-left-radius: 20px;
-    }
-    &__carte p {
-        margin: $no-margin;
-    }
+    &__carte 
+        img {
+            width: 100%;
+            object-fit: cover;
+            border-top-right-radius:20px ;
+            border-top-left-radius: 20px;
+            height: 225px;
+        }
+        figcaption {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin: 0 10px 0 15px;
+            h3 {
+                margin:10px 0 10px 0;
+                font-weight: bold;
+                width: 90%;
+            }
+            .heart {
+                width: 10%;
+            }
+            p {
+                margin: 0 0 5px 0;
+    
+            }
+
+        }
+        
 }
 
 .bg-img-restaurant {
@@ -150,7 +184,12 @@ a {
 }
 
 .footer {
+    background-color: black;
+    color: white;
     img {
         width: 50%;
+    }
+    p {
+        margin-bottom: 0;
     }
 }
