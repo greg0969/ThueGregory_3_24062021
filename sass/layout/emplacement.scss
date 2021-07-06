@@ -1,0 +1,24 @@
+.position {
+    flex-direction: row;
+    background-color: $bg-color-position;
+    box-shadow: $box-shadow-header;
+    padding-left: 50px;
+    &__icone {
+        margin-right: 25px;
+        align-self: center;
+        p {
+            margin: $no-margin;
+            .fa-map-marker-alt {
+               width: 10px; 
+            }
+        }
+    }
+    &__emplacement {
+        font-weight: $bold;
+        input {
+            border: none;
+            background-color: $bg-color-position;
+            margin: 20px 0 20px 0;
+        }
+    }
+}

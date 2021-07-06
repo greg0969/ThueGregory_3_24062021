@@ -1,0 +1,32 @@
+footer {
+    background-color: #353535;
+    color: white;
+    .footer {
+        margin-left: 25px;
+    div {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding-bottom: 30px;
+        p {
+            font-weight: bold;
+        }
+        i {
+            margin-right: 10px;
+            width: 3%;   
+        }  
+    }
+    p { 
+        font-size: 17px;
+        padding-bottom: 5px;
+        width: 90%;
+        &:first-child {
+            font-family: "Shrikhand";
+            margin-bottom: 10px;
+            padding-top: 25px; 
+            -webkit-text-stroke: 0;          
+        }
+    }
+    }
+   
+}

@@ -3,232 +3,32 @@
 @import "./utils/mixins";
 @import "./utils/extensions";
 
+@import "./base/Typography.scss";
+@import "./base/base";
 
-/*@import "./base/base";
+@import "./components/buttons";
+@import "./components/icones.scss";
 
-@import "./components/buttons";*/
-
-/*@import "./layout/nav";
-@import "./layout/container";
-@import "./layout/form";*/
-
-body {
-    font-family: 'Roboto', sans-serif;
-    color: $font-color;
-    margin: 0;
-}
-
-h1 {
-    font-family: "Shrikhand";
-    margin: 0 0 10px 0;
-    font-size: 27px;
-}
-
-h2,p {
-    margin: 0;
-}
+@import "./layout/header";
+@import "./layout/footer";
+@import "./layout/emplacement";
+@import "./layout/restaurants";
+@import "./layout/reservation";
+@import "./layout/fonctionnement";
 
 
 
-a {
-    text-decoration: none;
-    color: $font-color;
-    &:visited {
-        color: $font-color;
-    }
-}
 
-.bloc {
-    display: flex;
-    justify-content: center;
-}
 
-.logo {
-    text-align-last: center;
-    padding-top: 20px;  
-    img {
-        width: $element;
-    }
-} 
 
-.position {
-    flex-direction: row;
-    background-color: $bg-color-position;
-    box-shadow: $box-shadow-header;
-    padding-left: 50px;
-    &__icone {
-        margin-right: 25px;
-        align-self: center;
-        p {
-            margin: $no-margin;
-            .fa-map-marker-alt {
-               width: 10px; 
-            }
-        }
-    }
-    &__emplacement {
-        font-weight: $bold;
-        input {
-            border: none;
-            background-color: $bg-color-position;
-            margin: 20px 0 20px 0;
-        }
-    }
-}
 
-.reservation {
-    background-color: $bg-color-secondary;
-    flex-direction: column;
-    padding: 7% 6% 13% 6%;
-    font-size: 15px;
-    text-align: center;
-    &__titre h1{
-        margin: $no-margin;
-        padding: 10px 0 10px 0;
-        font-weight: $bold;
-    }
-    &__btn {
-        margin-top: 30px;
-        width: 50%;
-        align-self: center;
-        background: $btn-gradient ;
-        border-radius: 10em;
-        padding: 0 5% 0 5%;
-        a {
-            text-decoration: none;
-            color: $font-color-secondary;
-        }
-    }
-}
 
-.fonctionnement {
-    flex-direction: column;
-    margin: 0 5% 40px 5%;
-    &__rond {
-        background-color: $bg-color-primary;
-        border-radius: 10em;
-        padding: 5px 10px 5px 10px;
-        color: $font-color-secondary;
-        margin-left: -10px;
-    }
-    .carte {
-        display: flex;
-        flex-direction: row;
-        &:hover {
-            @include hover-fonctionnement ;
-        }
-    }
-    ul {
-        width: 100%;
-        padding: 0;
-        border-style: none;
-        background-color: $bg-color-secondary;
-        border-radius: 10em;
-        margin-bottom: 20px;
-        box-shadow: $box-shadow-fonctionnement;
-        
-        li {
-            display: flex;
-            flex-direction: row;
-            list-style-type: none;
-            padding: 20px 0 20px 0;
-            align-items: center;
-        }
-        p {
-            width: 10%;
-            margin: 0;
-        }
-        i {
-            margin: 0 7% 0 6%;
-        } 
-    }
-    
-}
 
-.restaurant {
-    flex-direction: column;
-    background-color: $bg-color-secondary;
-    padding-bottom: 40px;
-    &--margin-left {
-        margin-left: 20px;
-    }
-    &__carte figure {
-        background-color: white;
-        box-shadow: 1px 1px 10px 2px #c3c3c3;
-        border-radius: 20px;
-        margin: 10px 20px 4% 20px;
-    }
-    &__carte 
-        img {
-            width: 100%;
-            object-fit: cover;
-            border-top-right-radius:20px ;
-            border-top-left-radius: 20px;
-            height: 225px;
-        }
-        figcaption {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            margin: 0 10px 0 15px;
-            h3 {
-                margin:10px 0 10px 0;
-                font-weight: bold;
-                width: 90%;
-            }
-            .heart {
-                width: 10%;
-            }
-            p {
-                margin: 0 0 5px 0;
-    
-            }
 
-        }
-        
-}
 
-.bg-img-restaurant {
-    img {
-        width: 100%;
-    }
-}
 
-.menu {
-    flex-direction: column;
-    border-top-left-radius: 10% ;
-    border-top-right-radius: 10%;
-}
 
-footer {
-    background-color: #353535;
-    color: white;
-    .footer {
-        margin-left: 20px;
-    div {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        i {
-            margin-right: 10px;
-        }
-        p {
-            align-self: center;
-        }
-    }
-    p { 
-        font-size: 17px;
-        padding-bottom: 5px;
-        width: 90%;
-        & + p {
-            font-weight: bold;
-        }
-        &:first-child {
-            font-family: "Shrikhand";
-            margin-bottom: 10px;
-            padding-top: 20px;           
-        }
-    }
-    }
-   
-}
+
+
+
+
