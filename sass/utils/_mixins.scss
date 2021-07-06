@@ -1,0 +1,10 @@
+@import "_variables.scss";
+
+@mixin hover-fonctionnement {
+    ul { 
+        background-color: $bg-color-hover;
+    }
+    i {
+        color: $bg-color-primary;
+    }
+}

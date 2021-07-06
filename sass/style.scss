@@ -15,8 +15,20 @@
 body {
     font-family: 'Roboto', sans-serif;
     color: $font-color;
-    margin: $no-margin;
-}   
+    margin: 0;
+}
+
+h1 {
+    font-family: "Shrikhand";
+    margin: 0 0 10px 0;
+    font-size: 27px;
+}
+
+h2,p {
+    margin: 0;
+}
+
+
 
 a {
     text-decoration: none;
@@ -43,6 +55,7 @@ a {
     flex-direction: row;
     background-color: $bg-color-position;
     box-shadow: $box-shadow-header;
+    padding-left: 50px;
     &__icone {
         margin-right: 25px;
         align-self: center;
@@ -101,6 +114,9 @@ a {
     .carte {
         display: flex;
         flex-direction: row;
+        &:hover {
+            @include hover-fonctionnement ;
+        }
     }
     ul {
         width: 100%;
@@ -110,6 +126,7 @@ a {
         border-radius: 10em;
         margin-bottom: 20px;
         box-shadow: $box-shadow-fonctionnement;
+        
         li {
             display: flex;
             flex-direction: row;
@@ -130,7 +147,7 @@ a {
 
 .restaurant {
     flex-direction: column;
-    background-color: $bg-color-position;
+    background-color: $bg-color-secondary;
     padding-bottom: 40px;
     &--margin-left {
         margin-left: 20px;
@@ -183,13 +200,35 @@ a {
     border-top-right-radius: 10%;
 }
 
-.footer {
-    background-color: black;
+footer {
+    background-color: #353535;
     color: white;
-    img {
-        width: 50%;
+    .footer {
+        margin-left: 20px;
+    div {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        i {
+            margin-right: 10px;
+        }
+        p {
+            align-self: center;
+        }
     }
-    p {
-        margin-bottom: 0;
+    p { 
+        font-size: 17px;
+        padding-bottom: 5px;
+        width: 90%;
+        & + p {
+            font-weight: bold;
+        }
+        &:first-child {
+            font-family: "Shrikhand";
+            margin-bottom: 10px;
+            padding-top: 20px;           
+        }
     }
+    }
+   
 }

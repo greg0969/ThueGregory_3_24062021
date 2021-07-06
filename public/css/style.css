@@ -10,6 +10,16 @@ body {
   margin: 0;
 }
 
+h1 {
+  font-family: "Shrikhand";
+  margin: 0 0 10px 0;
+  font-size: 27px;
+}
+
+h2, p {
+  margin: 0;
+}
+
 a {
   text-decoration: none;
   color: #001534;
@@ -45,6 +55,7 @@ a:visited {
   background-color: #eaeaea;
   -webkit-box-shadow: inset 0px 4px 3px 0px #d1d1d1;
           box-shadow: inset 0px 4px 3px 0px #d1d1d1;
+  padding-left: 50px;
 }
 
 .position__icone {
@@ -117,7 +128,7 @@ a:visited {
 }
 
 .fonctionnement__rond {
-  background-color: #9356DC;
+  background-color: #9356dc;
   border-radius: 10em;
   padding: 5px 10px 5px 10px;
   color: #FFFFFF;
@@ -132,6 +143,14 @@ a:visited {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+}
+
+.fonctionnement .carte:hover ul {
+  background-color: #f5edff;
+}
+
+.fonctionnement .carte:hover i {
+  color: #9356dc;
 }
 
 .fonctionnement ul {
@@ -174,7 +193,7 @@ a:visited {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: #eaeaea;
+  background-color: #f6f6f6;
   padding-bottom: 40px;
 }
 
@@ -239,15 +258,49 @@ a:visited {
   border-top-right-radius: 10%;
 }
 
-.footer {
-  background-color: black;
+footer {
+  background-color: #353535;
   color: white;
 }
 
-.footer img {
-  width: 50%;
+footer .footer {
+  margin-left: 20px;
 }
 
-.footer p {
-  margin-bottom: 0;
+footer .footer div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+footer .footer div i {
+  margin-right: 10px;
+}
+
+footer .footer div p {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+footer .footer p {
+  font-size: 17px;
+  padding-bottom: 5px;
+  width: 90%;
+}
+
+footer .footer p + p {
+  font-weight: bold;
+}
+
+footer .footer p:first-child {
+  font-family: "Shrikhand";
+  margin-bottom: 10px;
+  padding-top: 20px;
 }
