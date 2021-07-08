@@ -1,6 +1,10 @@
 footer {
     background-color: #353535;
     color: white;
+    .footer--menu {
+        position: absolute;
+        top: 80em;
+    }
     .footer {
         margin-left: 25px;
     div {

@@ -1,5 +1,70 @@
-.menu {
-    flex-direction: column;
-    border-top-left-radius: 10% ;
-    border-top-right-radius: 10%;
+@import "../utils/variables";
+
+.bg-img-restaurant img {
+    position: absolute;
+    z-index: 0;
+    top: 80px;
 }
+
+.liste-menu {
+    flex-direction: column;
+    &__entrée {
+        padding-top: 20px;
+    }
+}
+
+.menu {
+    position: absolute;
+    z-index: 1;
+    top: 15.5em;
+    border: none;
+    background-color: $bg-color-secondary;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    padding: 30px 0 65px 17px;
+    &__btn-commande {
+        display: flex;
+        justify-content: center;
+    }
+    .carte {
+        background-color: white;
+        border-radius: 1em;
+        border-style: none;
+    }
+    .nom-restaurant {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        h2 {
+            font-family: "shrikhand";
+            -webkit-text-stroke:unset;
+        }
+        .fav {
+            font-size: 25px;
+            width: 15%;
+            align-self: center;
+        }
+    }
+}
+
+figcaption {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 13px 10px 13px 10px;
+    h4 {
+        width: 100%;
+        margin-bottom: 8px;
+    }
+    p {
+        font-size: 15px;
+        width: 90%;
+        &:last-child {
+            width: 10%;
+            font-weight: bold;
+        }
+    }
+    
+}
+
+

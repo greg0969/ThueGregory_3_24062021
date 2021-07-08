@@ -2,4 +2,13 @@
     border-radius: 10em;
     padding: 12px 5% 12px 5%;
     background: $btn-gradient ;
+    a {
+        color: white;
+    }
+}
+
+.btn-retour {
+    width: 25%;
+    align-self: center;
+    margin-left: 25px;
 }

@@ -11,11 +11,10 @@
 
 @import "./layout/header";
 @import "./layout/footer";
-@import "./layout/emplacement";
-@import "./layout/restaurants";
-@import "./layout/reservation";
-@import "./layout/fonctionnement";
 @import "./layout/loader";
+
+@import "./pages/index.scss";
+@import "./pages/menu.scss";
 
 
 
