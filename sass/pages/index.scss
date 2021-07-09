@@ -159,3 +159,17 @@
         width: 100%;
     }
 }
+
+.index {
+    animation : body 5s ease-in-out 0s ;
+}
+
+@keyframes body {
+    0% {
+        transform: translateX(-99999px) ; 
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+

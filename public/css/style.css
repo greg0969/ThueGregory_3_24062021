@@ -159,7 +159,6 @@ figure {
 }
 
 .loader {
-  position: relative;
   display: inline-block;
   width: 50px;
   height: 50px;
@@ -167,17 +166,16 @@ figure {
 }
 
 .section {
-  width: 100%;
   position: absolute;
-  background-color: white;
-  height: 120em;
-  z-index: 2;
+  top: 15em;
+  left: 9em;
+  z-index: 3;
 }
 
 .loader-circles {
   border-radius: 50px;
   border: 3px solid transparent;
-  border-top-color: black;
+  border-top-color: #9356dc;
   -webkit-animation: spin 1s linear infinite;
   animation: spin 1s linear infinite;
 }
@@ -192,7 +190,7 @@ figure {
   right: 5px;
   border-radius: 50px;
   border: 3px solid transparent;
-  border-top-color: black;
+  border-top-color: #99E2D0;
   filter: alpha(opacity=8);
   -khtml-opacity: 0.8;
   -moz-opacity: 0.8;
@@ -442,6 +440,18 @@ figure {
   width: 100%;
 }
 
+.index {
+  animation: body 5s ease-in-out 0s;
+}
+
+@keyframes body {
+  0% {
+    transform: translateX(-99999px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
 .bg-img-restaurant img {
   position: absolute;
   z-index: 0;

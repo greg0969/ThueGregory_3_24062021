@@ -15,3 +15,4 @@ $color-gradient-start : rgba(147,86,220,1) ;
 $color-gradient-end : rgba(203,86,220,1) ;
 $btn-gradient: linear-gradient(0deg, $color-gradient-start, $color-gradient-end);
 $btn-gradient-hover: linear-gradient(0deg, lighten($color-gradient-start,5%), lighten($color-gradient-end, 5%));
+$duree-loader : 2s;
