@@ -1,20 +1,27 @@
-footer {
-    background-color: #353535;
-    color: white;
-    .footer--menu {
-        position: absolute;
-        top: 80em;
-    }
+.index {
     .footer {
-        margin-left: 25px;
+        position: unset;
+    }
+}
+
+    .footer {
+        background-color: #353535;
+        color: white;
+        background-color: #353535;
+        color: white;
+        position: absolute;
+        top: 82em;
+        &--menu {
+            margin-left: 20px;
+            a {
+                color: white;
+            }
+        }
     div {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        padding-bottom: 30px;
-        p {
-            font-weight: bold;
-        }
+        padding-bottom: 20px;
         i {
             margin-right: 10px;
             width: 3%;   
@@ -33,4 +40,3 @@ footer {
     }
     }
    
-}

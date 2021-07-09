@@ -21,15 +21,13 @@
     background-color: $bg-color-secondary;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
-    padding: 30px 0 65px 17px;
-    &__btn-commande {
-        display: flex;
-        justify-content: center;
-    }
+    padding: 30px 0 110px 17px;
     .carte {
         background-color: white;
         border-radius: 1em;
         border-style: none;
+        box-shadow: 0px 0px 11px 2px darken($color: $bg-color-secondary, $amount: 20%) ;
+
     }
     .nom-restaurant {
         display: flex;
@@ -43,6 +41,7 @@
             font-size: 25px;
             width: 15%;
             align-self: center;
+            
         }
     }
 }
@@ -67,4 +66,26 @@ figcaption {
     
 }
 
+.menu {
+    figure {
+    opacity: 1;
+    animation: apparition-menu 1.2s ease-in-out ;
+    //transform-origin: top;
+    }
+}
 
+@keyframes apparition-menu {
+    0% {
+        opacity: 0;
+        transform: scaleY(-1);
+    }
+    33% {
+        opacity: 0.3;
+    }
+    66% {
+        opacity: 0.6;
+    }
+    100% {
+    }
+
+}

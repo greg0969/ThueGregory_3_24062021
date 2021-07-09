@@ -1,7 +1,12 @@
+@import "../utils/variables";
+
 .btn {
     border-radius: 10em;
     padding: 12px 5% 12px 5%;
     background: $btn-gradient ;
+    &:hover {
+        background: $btn-gradient-hover;
+    }
     a {
         color: white;
     }
@@ -11,4 +16,42 @@
     width: 25%;
     align-self: center;
     margin-left: 25px;
+}
+
+.liste-menu {
+    &__btn {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        z-index: 2;
+        top: 77em;
+        left: 5em;
+        &--commande {
+            padding: 15px 45px 15px 45px;
+            font-size: 17px;
+        }
+    }
+}
+
+@keyframes heart-fill {
+    0% {
+        color:lighten($color: #9356dc, $amount: 20%);
+    }
+    25%{
+        color:lighten($color: #9356dc, $amount: 15%);
+    }
+    50% {
+        color:lighten($color: #9356dc, $amount: 7%);
+    }
+    100% {
+        color: #9356dc;
+    }
+}
+
+.fav i {
+    &:hover {
+        color: $bg-color-primary;
+        animation: heart-fill 1s ease-in-out 15ms ;
+        font-weight: bold;
+    }
 }

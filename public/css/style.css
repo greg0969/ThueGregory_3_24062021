@@ -57,7 +57,10 @@ figure {
 .btn {
   border-radius: 10em;
   padding: 12px 5% 12px 5%;
-  background: linear-gradient(0deg, #9356dc 12%, #cb56dc 100%);
+  background: linear-gradient(0deg, #9356dc, #cb56dc);
+}
+.btn:hover {
+  background: linear-gradient(0deg, #a16be0, #d26be0);
 }
 .btn a {
   color: white;
@@ -67,6 +70,39 @@ figure {
   width: 25%;
   align-self: center;
   margin-left: 25px;
+}
+
+.liste-menu__btn {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  z-index: 2;
+  top: 77em;
+  left: 5em;
+}
+.liste-menu__btn--commande {
+  padding: 15px 45px 15px 45px;
+  font-size: 17px;
+}
+
+@keyframes heart-fill {
+  0% {
+    color: #c9abee;
+  }
+  25% {
+    color: #bc95e9;
+  }
+  50% {
+    color: #a674e2;
+  }
+  100% {
+    color: #9356dc;
+  }
+}
+.fav i:hover {
+  color: #9356dc;
+  animation: heart-fill 1s ease-in-out 15ms;
+  font-weight: bold;
 }
 
 .fa-utensils::before {
@@ -82,36 +118,40 @@ figure {
   padding-top: 20px;
 }
 
-footer {
+.index .footer {
+  position: unset;
+}
+
+.footer {
   background-color: #353535;
   color: white;
-}
-footer .footer--menu {
+  background-color: #353535;
+  color: white;
   position: absolute;
-  top: 80em;
+  top: 82em;
 }
-footer .footer {
-  margin-left: 25px;
+.footer--menu {
+  margin-left: 20px;
 }
-footer .footer div {
+.footer--menu a {
+  color: white;
+}
+.footer div {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  padding-bottom: 30px;
+  padding-bottom: 20px;
 }
-footer .footer div p {
-  font-weight: bold;
-}
-footer .footer div i {
+.footer div i {
   margin-right: 10px;
   width: 3%;
 }
-footer .footer p {
+.footer p {
   font-size: 17px;
   padding-bottom: 5px;
   width: 90%;
 }
-footer .footer p:first-child {
+.footer p:first-child {
   font-family: "Shrikhand";
   margin-bottom: 10px;
   padding-top: 25px;
@@ -394,6 +434,9 @@ footer .footer p:first-child {
   margin: 0 0 5px 0;
   -webkit-text-stroke: 0;
 }
+.restaurant figcaption p:last-child {
+  width: 80%;
+}
 
 .bg-img-restaurant img {
   width: 100%;
@@ -420,16 +463,13 @@ footer .footer p:first-child {
   background-color: #f6f6f6;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
-  padding: 30px 0 65px 17px;
-}
-.menu__btn-commande {
-  display: flex;
-  justify-content: center;
+  padding: 30px 0 110px 17px;
 }
 .menu .carte {
   background-color: white;
   border-radius: 1em;
   border-style: none;
+  box-shadow: 0px 0px 11px 2px #c3c3c3;
 }
 .menu .nom-restaurant {
   display: flex;
@@ -463,4 +503,22 @@ figcaption p {
 figcaption p:last-child {
   width: 10%;
   font-weight: bold;
+}
+
+.menu figure {
+  opacity: 1;
+  animation: apparition-menu 1.2s ease-in-out;
+}
+
+@keyframes apparition-menu {
+  0% {
+    opacity: 0;
+    transform: scaleY(-1);
+  }
+  33% {
+    opacity: 0.3;
+  }
+  66% {
+    opacity: 0.6;
+  }
 }

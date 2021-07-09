@@ -11,4 +11,7 @@ $no-margin:0;
 $box-shadow-header: inset 0px 4px 3px 0px darken($bg-color-position,10% ) ;
 $box-shadow-fonctionnement : 0px 4px 3px 0px darken($bg-color-position,10% ) ;
 $bold : bold;
-$btn-gradient: linear-gradient(0deg, rgba(147,86,220,1) 12%, rgba(203,86,220,1) 100%);
+$color-gradient-start : rgba(147,86,220,1) ;
+$color-gradient-end : rgba(203,86,220,1) ;
+$btn-gradient: linear-gradient(0deg, $color-gradient-start, $color-gradient-end);
+$btn-gradient-hover: linear-gradient(0deg, lighten($color-gradient-start,5%), lighten($color-gradient-end, 5%));
