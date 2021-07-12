@@ -8,3 +8,9 @@
         color: $bg-color-primary;
     }
 }
+
+@mixin btn-gradient {
+    background: linear-gradient(0deg, $color-gradient-start, $color-gradient-end);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

@@ -1,0 +1,35 @@
+@import "../utils/variables";
+
+.checkbox {
+    width: 17%;
+    background-color: #99E2D0;
+    border-top-right-radius: 1em;
+    border-bottom-right-radius: 1em;
+    display: none;
+    i {
+        font-weight: bold;
+        color: white;
+        font-size: 20px;
+        padding: 25px 0px 0px 12px; 
+    }
+}
+
+.menu {
+    .carte:hover {
+        .checkbox {
+            display: unset;
+            animation: checkbox 1s ease-in-out ;
+            transform-origin: right;
+            
+        }
+    }
+}
+
+@keyframes checkbox {
+    0% {
+        transform: scaleX(0);
+    }
+    100% {
+        transform: scaleX(0.5);
+    }
+}

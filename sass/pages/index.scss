@@ -74,7 +74,7 @@
         background-color: $bg-color-secondary;
         border-radius: 20px;
         margin-bottom: 20px;
-        box-shadow: $box-shadow-fonctionnement;
+        box-shadow: $box-shadow-btn;
         
         li {
             display: flex;
@@ -131,6 +131,9 @@
             border-top-left-radius: 20px;
             height: 167px;
         }
+        figure .fav {
+            width: 10%;
+        }
         figcaption {
             display: flex;
             flex-direction: row;
@@ -161,10 +164,10 @@
 }
 
 .index {
-    animation : body 5s ease-in-out 0s ;
+    animation : loading-page 1.7s ease-out 0s ;
 }
 
-@keyframes body {
+@keyframes loading-page {
     0% {
         transform: translateX(-99999px) ; 
     }

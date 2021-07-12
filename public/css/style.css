@@ -58,9 +58,11 @@ figure {
   border-radius: 10em;
   padding: 12px 5% 12px 5%;
   background: linear-gradient(0deg, #9356dc, #cb56dc);
+  box-shadow: 0px 4px 3px 0px #d1d1d1;
 }
 .btn:hover {
-  background: linear-gradient(0deg, #a16be0, #d26be0);
+  background: linear-gradient(0deg, #9e67e0, #d067e0);
+  box-shadow: 0px 4px 3px 0px #b7b7b7;
 }
 .btn a {
   color: white;
@@ -85,6 +87,20 @@ figure {
   font-size: 17px;
 }
 
+.fav {
+  font-size: 25px;
+  width: 15%;
+  align-self: center;
+}
+
+.fav i:hover {
+  background: linear-gradient(0deg, #9356dc, #cb56dc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: heart-fill 1s ease-in-out 1ms;
+  font-weight: bold;
+}
+
 @keyframes heart-fill {
   0% {
     color: #c9abee;
@@ -96,15 +112,11 @@ figure {
     color: #a674e2;
   }
   100% {
-    color: #9356dc;
+    background: linear-gradient(0deg, #9356dc, #cb56dc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 }
-.fav i:hover {
-  color: #9356dc;
-  animation: heart-fill 1s ease-in-out 15ms;
-  font-weight: bold;
-}
-
 .fa-utensils::before {
   font-size: 15px;
 }
@@ -169,7 +181,7 @@ figure {
   position: absolute;
   top: 15em;
   left: 9em;
-  z-index: 3;
+  z-index: -1;
 }
 
 .loader-circles {
@@ -197,6 +209,10 @@ figure {
   opacity: 0.8;
   -webkit-animation: spinreverse 5s linear infinite;
   animation: spinreverse 5s linear infinite;
+}
+
+.loader-circles:after {
+  border-top-color: #969cd6;
 }
 
 .loader-circles:before {
@@ -280,6 +296,34 @@ figure {
   100% {
     -webkit-transform: rotate(-360deg);
     transform: rotate(-360deg);
+  }
+}
+.checkbox {
+  width: 17%;
+  background-color: #99E2D0;
+  border-top-right-radius: 1em;
+  border-bottom-right-radius: 1em;
+  display: none;
+}
+.checkbox i {
+  font-weight: bold;
+  color: white;
+  font-size: 20px;
+  padding: 25px 0px 0px 12px;
+}
+
+.menu .carte:hover .checkbox {
+  display: unset;
+  animation: checkbox 1s ease-in-out;
+  transform-origin: right;
+}
+
+@keyframes checkbox {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(0.5);
   }
 }
 .position {
@@ -416,6 +460,9 @@ figure {
   border-top-left-radius: 20px;
   height: 167px;
 }
+.restaurant figure .fav {
+  width: 10%;
+}
 .restaurant figcaption {
   display: flex;
   flex-direction: row;
@@ -441,10 +488,10 @@ figure {
 }
 
 .index {
-  animation: body 5s ease-in-out 0s;
+  animation: loading-page 1.7s ease-out 0s;
 }
 
-@keyframes body {
+@keyframes loading-page {
   0% {
     transform: translateX(-99999px);
   }
@@ -476,10 +523,35 @@ figure {
   padding: 30px 0 110px 17px;
 }
 .menu .carte {
+  display: flex;
   background-color: white;
   border-radius: 1em;
   border-style: none;
   box-shadow: 0px 0px 11px 2px #c3c3c3;
+}
+.menu .carte figcaption {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 13px 10px 13px 10px;
+  width: 95%;
+}
+.menu .carte figcaption h4, .menu .carte figcaption p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.menu .carte figcaption h4 {
+  width: 100%;
+  margin-bottom: 8px;
+}
+.menu .carte figcaption p {
+  font-size: 15px;
+  width: 90%;
+}
+.menu .carte figcaption p:last-child {
+  width: 10%;
+  font-weight: bold;
 }
 .menu .nom-restaurant {
   display: flex;
@@ -490,30 +562,6 @@ figure {
   font-family: "shrikhand";
   -webkit-text-stroke: unset;
 }
-.menu .nom-restaurant .fav {
-  font-size: 25px;
-  width: 15%;
-  align-self: center;
-}
-
-figcaption {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  padding: 13px 10px 13px 10px;
-}
-figcaption h4 {
-  width: 100%;
-  margin-bottom: 8px;
-}
-figcaption p {
-  font-size: 15px;
-  width: 90%;
-}
-figcaption p:last-child {
-  width: 10%;
-  font-weight: bold;
-}
 
 .menu figure {
   opacity: 1;
@@ -522,13 +570,24 @@ figcaption p:last-child {
 
 @keyframes apparition-menu {
   0% {
-    opacity: 0;
+    opacity: 0.2;
     transform: scaleY(-1);
   }
   33% {
-    opacity: 0.3;
+    opacity: 0.4;
   }
   66% {
-    opacity: 0.6;
+    opacity: 0.8;
+  }
+}
+@keyframes checkbox {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(50);
+  }
+  100% {
+    transform: translateX(100);
   }
 }

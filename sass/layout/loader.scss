@@ -11,7 +11,7 @@
     position: absolute;
 	top: 15em;
 	left: 9em;
-    z-index: 3;
+    z-index: -1;
 }
 
 .loader-circles {
@@ -41,6 +41,10 @@
 	animation: spinreverse 5s linear infinite;
 }
 
+.loader-circles:after {
+	border-top-color: $bg-color-mix;
+}
+
 .loader-circles:before {
 	top: 12px; 
 	left: 12px;
@@ -49,6 +53,7 @@
 	-webkit-animation: spinreverse 10s linear infinite;
 	animation: spinreverse 10s linear infinite;
 }
+
 
 @-webkit-keyframes grow {
 	0% { -webkit-transform: scaleY(0); transform: scaleY(0); opacity: 0;}
