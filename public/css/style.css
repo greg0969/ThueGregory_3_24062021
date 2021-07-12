@@ -563,21 +563,33 @@ figure {
   -webkit-text-stroke: unset;
 }
 
-.menu figure {
+.menu__entree {
   opacity: 1;
-  animation: apparition-menu 1.2s ease-in-out;
+  animation: apparition-menu 1.5s ease-in-out;
+}
+.menu__plat {
+  opacity: 1;
+  animation: apparition-menu 2.5s ease-in-out;
+}
+.menu__dessert {
+  opacity: 1;
+  animation: apparition-menu 3.5s ease-in-out;
 }
 
 @keyframes apparition-menu {
   0% {
-    opacity: 0.2;
-    transform: scaleY(-1);
+    opacity: 0;
+    transform: scaleY(0);
   }
   33% {
-    opacity: 0.4;
+    opacity: 0.2;
   }
   66% {
-    opacity: 0.8;
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(1);
   }
 }
 @keyframes checkbox {
