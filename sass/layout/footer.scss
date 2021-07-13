@@ -7,10 +7,6 @@
     .footer {
         background-color: #353535;
         color: white;
-        background-color: #353535;
-        color: white;
-        position: absolute;
-        top: 82em;
         &--menu {
             margin-left: 20px;
             section {
@@ -20,8 +16,22 @@
             }
             a {
                 color: white;
+                width: 100%;
             }
         }
+    h4 {
+        font-family: "Shrikhand";
+        margin-bottom: 10px;
+        padding-top: 25px; 
+        -webkit-text-stroke: 0;
+        font-weight: unset;
+        @media (min-width: 1440px) {
+            display: flex;
+            font-size: 25px;
+            justify-content: center;
+            margin-bottom: 20px;
+        }  
+    }
     div {
         display: flex;
         flex-direction: row;
@@ -43,18 +53,6 @@
         font-size: 17px;
         padding-bottom: 5px;
         width: 90%;
-        &:first-child {
-            font-family: "Shrikhand";
-            margin-bottom: 10px;
-            padding-top: 25px; 
-            -webkit-text-stroke: 0;
-            @media (min-width: 1440px) {
-                display: flex;
-                font-size: 25px;
-                justify-content: center;
-                margin-bottom: 20px;
-            }          
-        }
     }
 }
    

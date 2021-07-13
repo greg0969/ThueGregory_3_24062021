@@ -45,7 +45,7 @@
     @media (min-width: 1440px) {
         margin-bottom: 60px;
     }
-    &__titre h1{
+    &__titre h2{
         margin: $no-margin;
         padding: 10px 0 10px 0;
         font-weight: $bold;
@@ -157,6 +157,7 @@
             padding: 4px;
             right: 35px;
             margin-top: 10px;
+            border-radius: 4px;
             p {
                 font-size: 15px;
                 text-align: center;
@@ -185,10 +186,10 @@
                 width: 10%;
             }
             p {
-                margin: 0 0 5px 0;
-                -webkit-text-stroke: 0;
+                -webkit-text-stroke: 0.4px;
                 &:last-child {
                     width: 80%;
+                    margin-bottom: 15px;
                 }
             }
 

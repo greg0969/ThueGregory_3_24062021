@@ -1,10 +1,5 @@
 @import "../utils/variables";
 
-.bg-img-restaurant img {
-    position: absolute;
-    z-index: 0;
-    top: 80px;
-}
 
 .liste-menu {
     flex-direction: column;
@@ -14,9 +9,7 @@
 }
 
 .menu {
-    position: absolute;
-    z-index: 1;
-    top: 15.5em;
+    margin-top: -45px;
     border: none;
     background-color: $bg-color-secondary;
     border-top-left-radius: 25px;
@@ -71,15 +64,15 @@
 .menu {
     &__entree {
         @include animation-menu ;
-        animation: apparition-menu 3.5s ease-in-out;
+        animation: apparition-menu 1.7s ease-in-out;
     }
     &__plat {
         @include animation-menu ;
-        animation: apparition-menu 2.5s ease-in-out  ;
+        animation: apparition-menu 1.5s ease-in-out  ;
     }
     &__dessert {
         @include animation-menu ;
-        animation: apparition-menu 1.5s ease-in-out ;
+        animation: apparition-menu 1s ease-in-out ;
     }
 }
 

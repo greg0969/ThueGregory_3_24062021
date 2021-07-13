@@ -25,16 +25,16 @@ h3 {
 
 body {
   font-family: "Roboto", sans-serif;
-  color: #001534;
+  color: #000000;
   margin: 0;
 }
 
 a {
   text-decoration: none;
-  color: #001534;
+  color: #000000;
 }
 a:visited {
-  color: #001534;
+  color: #000000;
 }
 
 .bloc {
@@ -146,10 +146,6 @@ figure {
 .footer {
   background-color: #353535;
   color: white;
-  background-color: #353535;
-  color: white;
-  position: absolute;
-  top: 82em;
 }
 .footer--menu {
   margin-left: 20px;
@@ -161,6 +157,22 @@ figure {
 }
 .footer--menu a {
   color: white;
+  width: 100%;
+}
+.footer h4 {
+  font-family: "Shrikhand";
+  margin-bottom: 10px;
+  padding-top: 25px;
+  -webkit-text-stroke: 0;
+  font-weight: unset;
+}
+@media (min-width: 1440px) {
+  .footer h4 {
+    display: flex;
+    font-size: 25px;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
 }
 .footer div {
   display: flex;
@@ -186,20 +198,6 @@ figure {
   font-size: 17px;
   padding-bottom: 5px;
   width: 90%;
-}
-.footer p:first-child {
-  font-family: "Shrikhand";
-  margin-bottom: 10px;
-  padding-top: 25px;
-  -webkit-text-stroke: 0;
-}
-@media (min-width: 1440px) {
-  .footer p:first-child {
-    display: flex;
-    font-size: 25px;
-    justify-content: center;
-    margin-bottom: 20px;
-  }
 }
 
 .loader {
@@ -421,7 +419,7 @@ figure {
     margin-bottom: 60px;
   }
 }
-.reservation__titre h1 {
+.reservation__titre h2 {
   margin: 0;
   padding: 10px 0 10px 0;
   font-weight: bold;
@@ -539,6 +537,7 @@ figure {
   padding: 4px;
   right: 35px;
   margin-top: 10px;
+  border-radius: 4px;
 }
 .restaurant__carte .notif-nouveau p {
   font-size: 15px;
@@ -568,11 +567,11 @@ figure {
   width: 10%;
 }
 .restaurant__carte figcaption p {
-  margin: 0 0 5px 0;
-  -webkit-text-stroke: 0;
+  -webkit-text-stroke: 0.4px;
 }
 .restaurant__carte figcaption p:last-child {
   width: 80%;
+  margin-bottom: 15px;
 }
 
 .bg-img-restaurant img {
@@ -587,12 +586,6 @@ figure {
     transform: translateX(0);
   }
 }
-.bg-img-restaurant img {
-  position: absolute;
-  z-index: 0;
-  top: 80px;
-}
-
 .liste-menu {
   flex-direction: column;
 }
@@ -601,9 +594,7 @@ figure {
 }
 
 .menu {
-  position: absolute;
-  z-index: 1;
-  top: 15.5em;
+  margin-top: -45px;
   border: none;
   background-color: #f6f6f6;
   border-top-left-radius: 25px;
@@ -654,17 +645,17 @@ figure {
 .menu__entree {
   opacity: 1;
   transform-origin: bottom;
-  animation: apparition-menu 3.5s ease-in-out;
+  animation: apparition-menu 1.7s ease-in-out;
 }
 .menu__plat {
   opacity: 1;
   transform-origin: bottom;
-  animation: apparition-menu 2.5s ease-in-out;
+  animation: apparition-menu 1.5s ease-in-out;
 }
 .menu__dessert {
   opacity: 1;
   transform-origin: bottom;
-  animation: apparition-menu 1.5s ease-in-out;
+  animation: apparition-menu 1s ease-in-out;
 }
 
 @keyframes apparition-menu {
