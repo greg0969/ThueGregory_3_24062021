@@ -165,12 +165,6 @@ figure {
   text-align-last: center;
   padding-top: 20px;
 }
-@media (min-width: 1440px) {
-  .logo {
-    margin-left: 20%;
-  }
-}
-
 .index .footer {
   position: unset;
 }
