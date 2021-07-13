@@ -19,3 +19,12 @@
     opacity: 1;
     transform-origin: bottom;
 }
+
+@mixin responsive-h2 {
+    h2 {
+        @media (min-width:1440px) {
+            width: 100%;
+            text-align: center;
+        }
+    }
+}

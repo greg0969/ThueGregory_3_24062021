@@ -12,6 +12,10 @@
 	top: 15em;
 	left: 9em;
     z-index: -1;
+	@media (min-width: 1440px) {
+		top: 40%;
+		left: 50%;
+	}
 }
 
 .loader-circles {

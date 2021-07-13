@@ -24,3 +24,20 @@ h3 {
         text-transform: uppercase;
     }
 }
+
+.reservation__btn {
+    p {
+        -webkit-text-stroke: 0.5px;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: $font-color;
+    p {
+        color: white;
+    }
+    &:visited {
+        color: $font-color;
+    }
+}

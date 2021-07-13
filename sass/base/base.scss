@@ -1,16 +1,11 @@
+@import "../utils/mixins";
+
 body {
     font-family: 'Roboto', sans-serif;
     color: $font-color;
     margin: 0;
 }
 
-a {
-    text-decoration: none;
-    color: $font-color;
-    &:visited {
-        color: $font-color;
-    }
-}
 
 .bloc {
     display: flex;
@@ -28,4 +23,12 @@ figure {
 
 .menu figure {
     width: 96%;
+}
+
+.fonctionnement {
+    @include responsive-h2;
+}
+
+.restaurant  {
+    @include responsive-h2;
 }

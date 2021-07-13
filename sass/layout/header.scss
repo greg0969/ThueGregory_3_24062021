@@ -1,4 +1,7 @@
 .logo {
     text-align-last: center;
-    padding-top: 20px;  
+    padding-top: 20px;
+    @media (min-width: 1440px) {
+        margin-left: 20%;
+    } 
 } 

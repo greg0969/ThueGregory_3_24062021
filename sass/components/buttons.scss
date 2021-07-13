@@ -33,6 +33,10 @@
         z-index: 2;
         top: 77em;
         left: 5em;
+        @media (min-width: 1440px) {
+            top: 61em;
+            left: 46%;
+        }
         &--commande {
             padding: 15px 45px 15px 45px;
             font-size: 17px;
