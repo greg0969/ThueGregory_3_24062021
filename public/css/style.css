@@ -198,6 +198,7 @@ figure {
   font-size: 17px;
   padding-bottom: 5px;
   width: 90%;
+  -webkit-text-stroke: 0.1px;
 }
 
 .loader {
