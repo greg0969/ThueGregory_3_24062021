@@ -13,6 +13,11 @@
         top: 82em;
         &--menu {
             margin-left: 20px;
+            section {
+                @media (min-width: 1440px) {
+                    width: 100%;
+                }
+            }
             a {
                 color: white;
             }
@@ -22,9 +27,16 @@
         flex-direction: row;
         flex-wrap: wrap;
         padding-bottom: 20px;
+        @media (min-width: 1440px) {
+            margin-left: 60px;
+        }
+        @media (min-width: 1440px) {
+            flex-wrap: nowrap;
+            
+        }
         i {
             margin-right: 10px;
-            width: 3%;   
+            width: 3%; 
         }  
     }
     p { 
@@ -35,7 +47,13 @@
             font-family: "Shrikhand";
             margin-bottom: 10px;
             padding-top: 25px; 
-            -webkit-text-stroke: 0;          
+            -webkit-text-stroke: 0;
+            @media (min-width: 1440px) {
+                display: flex;
+                font-size: 25px;
+                justify-content: center;
+                margin-bottom: 20px;
+            }          
         }
     }
 }
