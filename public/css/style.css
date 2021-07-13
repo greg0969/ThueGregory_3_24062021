@@ -94,6 +94,11 @@ figure {
   align-self: center;
   margin-left: 25px;
 }
+@media (min-width: 1440px) {
+  .btn-retour {
+    margin: 0 15em 0 50px;
+  }
+}
 
 .liste-menu__btn {
   display: flex;

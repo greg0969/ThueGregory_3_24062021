@@ -21,6 +21,9 @@
     width: 25%;
     align-self: center;
     margin-left: 25px;
+    @media (min-width: 1440px) {
+        margin: 0 15em 0 50px;
+    }
 }
 
 //bouton commander des pages menu
