@@ -6,8 +6,7 @@ $bg-color-position: #eaeaea;
 $bg-color-secondary : #f6f6f6;
 $bg-color-primary : #9356dc;
 $bg-color-tertiary : #99E2D0;
-$bg-color-mix : mix($bg-color-primary, $bg-color-tertiary);
-
+$bg-color-loader : #FF79DA ;
 //box shadow
 
 $box-shadow-header: inset 0px 4px 3px 0px darken($bg-color-position,10% ) ;

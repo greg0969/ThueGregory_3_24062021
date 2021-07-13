@@ -70,16 +70,16 @@
 
 .menu {
     &__entree {
-        opacity: 1;
-        animation: apparition-menu 1.5s ease-in-out;
+        @include animation-menu ;
+        animation: apparition-menu 3.5s ease-in-out;
     }
     &__plat {
-    opacity: 1;
-    animation: apparition-menu 2.5s ease-in-out  ;
+        @include animation-menu ;
+        animation: apparition-menu 2.5s ease-in-out  ;
     }
     &__dessert {
-        opacity: 1;
-        animation: apparition-menu 3.5s ease-in-out ;
+        @include animation-menu ;
+        animation: apparition-menu 1.5s ease-in-out ;
     }
 }
 
@@ -101,7 +101,7 @@
 
 }
 
-@keyframes checkbox {
+/*@keyframes checkbox {
     0% {
         transform: translateX(0);
     }
@@ -111,4 +111,4 @@
     100% {
         transform: translateX(100);
     }
-}
+}*/

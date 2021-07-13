@@ -51,6 +51,7 @@
 .fav i {
     &:hover {
         @include btn-gradient;
+        opacity: 1;
         animation: heart-fill 1s ease-in-out 1ms ;
         font-weight: bold;
     }
@@ -59,15 +60,23 @@
 @keyframes heart-fill {
     0% {
         color: lighten($color: #9356dc, $amount: 20%);
+        opacity: 0.2;
     }
     25%{
         color:lighten($color: #9356dc, $amount: 15%);
+        opacity: 0.4;
     }
     50% {
         color:lighten($color: #9356dc, $amount: 7%);
+        opacity: 0.6;
+    }
+    75% {
+        color:lighten($color: #9356dc, $amount: 4%);
+        opacity: 0.8; 
     }
     100% {
         @include btn-gradient;
+        opacity: 1;
     }
 }
 
