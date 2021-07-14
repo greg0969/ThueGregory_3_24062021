@@ -8,10 +8,6 @@ body h1 {
   margin: 0 0 10px 0;
   font-size: 27px;
 }
-body h2 {
-  font-family: "shrikhand";
-  -webkit-text-stroke: unset;
-}
 
 h2, p, h3, h4 {
   margin: 0;
@@ -24,6 +20,10 @@ h3 {
   width: 90%;
 }
 
+.menu h2 {
+  font-family: "shrikhand";
+  -webkit-text-stroke: unset;
+}
 .menu h3 {
   border-bottom: solid;
   border-color: #99E2D0;
@@ -111,8 +111,8 @@ figure {
   justify-content: center;
   position: absolute;
   z-index: 2;
-  top: 77em;
-  left: 5em;
+  top: 192%;
+  left: 25%;
 }
 @media (min-width: 1440px) {
   .liste-menu__btn {

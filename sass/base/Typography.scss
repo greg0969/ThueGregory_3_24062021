@@ -8,15 +8,7 @@ body {
         margin: 0 0 10px 0;
         font-size: 27px;
         }
-    h2 {
-        font-family: "shrikhand";
-        -webkit-text-stroke:unset;
-    }
 }
-
-
-
-
 
 h2,p,h3,h4 {
     margin: 0;
@@ -30,6 +22,10 @@ h3 {
 }
 
 .menu {
+    h2 {
+        font-family: "shrikhand";
+        -webkit-text-stroke:unset;
+    }
     h3 {
         border-bottom: solid;
         border-color: #99E2D0;
