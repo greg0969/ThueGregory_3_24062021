@@ -115,8 +115,8 @@ figure {
 }
 @media (min-width: 1440px) {
   .liste-menu__btn {
-    top: 61em;
-    left: 46%;
+    bottom: -15em;
+    left: 40%;
   }
 }
 .liste-menu__btn--commande {
