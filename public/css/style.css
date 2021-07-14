@@ -8,6 +8,16 @@ body h1 {
   margin: 0 0 10px 0;
   font-size: 27px;
 }
+body .menu h2 {
+  font-family: "shrikhand";
+  -webkit-text-stroke: unset;
+}
+body .menu h3 {
+  border-bottom: solid;
+  border-color: #99E2D0;
+  width: 15%;
+  text-transform: uppercase;
+}
 
 h2, p, h3, h4 {
   margin: 0;
@@ -18,17 +28,6 @@ h3 {
   font-size: 20px;
   margin: 30px 0 10px 0;
   width: 90%;
-}
-
-.menu h2 {
-  font-family: "shrikhand";
-  -webkit-text-stroke: unset;
-}
-.menu h3 {
-  border-bottom: solid;
-  border-color: #99E2D0;
-  width: 15%;
-  text-transform: uppercase;
 }
 
 .reservation__btn p {
@@ -111,7 +110,7 @@ figure {
   justify-content: center;
   position: absolute;
   z-index: 2;
-  top: 192%;
+  bottom: -40em;
   left: 25%;
 }
 @media (min-width: 1440px) {

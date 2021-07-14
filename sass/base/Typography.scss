@@ -7,7 +7,19 @@ body {
         font-family: "Shrikhand";
         margin: 0 0 10px 0;
         font-size: 27px;
+    }
+    .menu {
+        h2 {
+            font-family: "shrikhand";
+            -webkit-text-stroke:unset;
         }
+        h3 {
+            border-bottom: solid;
+            border-color: #99E2D0;
+            width: 15%;
+            text-transform: uppercase;
+        }
+    }
 }
 
 h2,p,h3,h4 {
@@ -21,18 +33,7 @@ h3 {
     width: 90%;
 }
 
-.menu {
-    h2 {
-        font-family: "shrikhand";
-        -webkit-text-stroke:unset;
-    }
-    h3 {
-        border-bottom: solid;
-        border-color: #99E2D0;
-        width: 15%;
-        text-transform: uppercase;
-    }
-}
+
 
 .reservation__btn {
     p {
