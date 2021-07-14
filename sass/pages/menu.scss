@@ -76,10 +76,6 @@
             width: 100%;
             @include responsive-h2;
         }
-        h2 {
-            font-family: "shrikhand";
-            -webkit-text-stroke:unset;
-        }
     }
 }
 

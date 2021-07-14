@@ -1,8 +1,16 @@
 @charset "UTF-8";
-h1 {
+body {
+  font-family: "Roboto", sans-serif;
+  color: #000000;
+}
+body h1 {
   font-family: "Shrikhand";
   margin: 0 0 10px 0;
   font-size: 27px;
+}
+body h2 {
+  font-family: "shrikhand";
+  -webkit-text-stroke: unset;
 }
 
 h2, p, h3, h4 {
@@ -39,8 +47,6 @@ a:visited {
 }
 
 body {
-  font-family: "Roboto", sans-serif;
-  color: #000000;
   margin: 0;
 }
 
@@ -710,10 +716,6 @@ figure {
     width: 100%;
     text-align: center;
   }
-}
-.menu .nom-restaurant h2 {
-  font-family: "shrikhand";
-  -webkit-text-stroke: unset;
 }
 
 .menu__entree {

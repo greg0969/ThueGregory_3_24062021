@@ -1,9 +1,22 @@
+@import "../utils/variables";
 
-h1 {
-    font-family: "Shrikhand";
-    margin: 0 0 10px 0;
-    font-size: 27px;
+body {
+    font-family: 'Roboto', sans-serif;
+    color: $font-color;
+    h1 {
+        font-family: "Shrikhand";
+        margin: 0 0 10px 0;
+        font-size: 27px;
+        }
+    h2 {
+        font-family: "shrikhand";
+        -webkit-text-stroke:unset;
+    }
 }
+
+
+
+
 
 h2,p,h3,h4 {
     margin: 0;
