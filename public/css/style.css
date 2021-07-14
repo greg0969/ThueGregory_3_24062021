@@ -448,7 +448,7 @@ figure {
   background-color: #f6f6f6;
   flex-direction: column;
   padding: 7% 6% 13% 6%;
-  font-size: 15px;
+  font-size: 17px;
   text-align: center;
 }
 @media (min-width: 1440px) {
@@ -572,13 +572,13 @@ figure {
 }
 @media (min-width: 1440px) {
   .restaurant__carte .notif-nouveau--1 {
-    left: 16em;
+    left: 19%;
     width: 6%;
   }
 }
 @media (min-width: 1440px) {
   .restaurant__carte .notif-nouveau--2 {
-    left: 34.5em;
+    left: 41%;
     width: 6%;
   }
 }
@@ -611,6 +611,7 @@ figure {
 }
 .restaurant__carte figcaption p {
   -webkit-text-stroke: 0.4px;
+  color: black;
 }
 .restaurant__carte figcaption p:last-child {
   width: 80%;
