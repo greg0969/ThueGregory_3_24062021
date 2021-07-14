@@ -170,6 +170,9 @@ figure {
   text-align-last: center;
   padding-top: 20px;
 }
+.logo h1 {
+  font-family: "shrikhand";
+}
 .index .footer {
   position: unset;
 }
@@ -667,6 +670,9 @@ figure {
   .menu__section {
     width: 31%;
   }
+}
+.menu .nom-restaurant h2 {
+  font-family: "shrikhand";
 }
 .menu .carte {
   display: flex;
