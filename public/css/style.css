@@ -3,7 +3,7 @@ body {
   font-family: "Roboto", sans-serif;
   color: #000000;
 }
-body h1 {
+body .logo h1 {
   font-family: "Shrikhand";
   margin: 0 0 10px 0;
   font-size: 27px;
