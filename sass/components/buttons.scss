@@ -32,13 +32,9 @@
     &__btn {
         display: flex;
         justify-content: center;
-        position: absolute;
-        z-index: 2;
-        bottom: -40em;
-        left: 25%;
+        margin-top: 45px;
         @media (min-width: 1440px) {
-            bottom: -15em;
-            left: 40%;
+            width: 100%;
         }
         &--commande {
             padding: 15px 45px 15px 45px;
@@ -52,7 +48,6 @@
 .fav {
     font-size: 25px;
     width: 15%;
-    align-self: center;
 }
 
 .fav i {

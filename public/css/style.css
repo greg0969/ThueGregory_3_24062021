@@ -108,15 +108,11 @@ figure {
 .liste-menu__btn {
   display: flex;
   justify-content: center;
-  position: absolute;
-  z-index: 2;
-  bottom: -40em;
-  left: 25%;
+  margin-top: 45px;
 }
 @media (min-width: 1440px) {
   .liste-menu__btn {
-    bottom: -15em;
-    left: 40%;
+    width: 100%;
   }
 }
 .liste-menu__btn--commande {
@@ -127,7 +123,6 @@ figure {
 .fav {
   font-size: 25px;
   width: 15%;
-  align-self: center;
 }
 
 .fav i:hover {
@@ -246,7 +241,7 @@ figure {
 
 .section {
   position: absolute;
-  top: 40%;
+  top: 38%;
   left: 43%;
   z-index: -1;
 }
@@ -458,7 +453,7 @@ figure {
 }
 @media (min-width: 1440px) {
   .reservation {
-    margin-bottom: 60px;
+    padding-bottom: 8%;
   }
 }
 .reservation__titre h2 {
@@ -468,7 +463,7 @@ figure {
 }
 .reservation__btn {
   margin-top: 30px;
-  width: 60%;
+  width: 65%;
   align-self: center;
 }
 @media (min-width: 1440px) {
@@ -479,7 +474,8 @@ figure {
 
 .fonctionnement {
   flex-direction: column;
-  margin: 40px 5% 40px 5%;
+  padding: 40px 5% 40px 5%;
+  background-color: white;
 }
 @media (min-width: 1440px) {
   .fonctionnement {
@@ -654,19 +650,22 @@ figure {
   background-color: #f6f6f6;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
-  padding: 30px 0 110px 17px;
+  padding: 30px 0 50px 0;
 }
 @media (min-width: 1440px) {
   .menu {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    padding-bottom: 10em;
+    padding-bottom: 5em;
   }
+}
+.menu__section {
+  margin-left: 20px;
 }
 @media (min-width: 1440px) {
   .menu__section {
-    width: 33%;
+    width: 31%;
   }
 }
 .menu .carte {
@@ -703,6 +702,7 @@ figure {
 .menu .nom-restaurant {
   display: flex;
   flex-direction: row;
+  margin-left: 20px;
   justify-content: space-between;
 }
 @media (min-width: 1440px) {

@@ -1,3 +1,5 @@
+@import "../utils/mixins";
+
 //bloc principal
 .index {
     animation : loading-page 1.7s ease-out 0s ;
@@ -42,7 +44,7 @@
     font-size: 17px;
     text-align: center;
     @media (min-width: 1440px) {
-        margin-bottom: 60px;
+        padding-bottom: 8%;
     }
     &__titre h2{
         margin: $no-margin;
@@ -51,7 +53,7 @@
     }
     &__btn {
         margin-top: 30px;
-        width: 60%;
+        width: 65%;
         align-self: center;
         @media (min-width: 1440px) {
             width: 15%;
@@ -63,7 +65,8 @@
 
 .fonctionnement {
     flex-direction: column;
-    margin: 40px 5% 40px 5%;
+    padding: 40px 5% 40px 5%;
+    background-color: white;
     @media (min-width: 1440px) {
         flex-direction: row;
         margin: 0;
