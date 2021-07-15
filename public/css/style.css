@@ -181,6 +181,12 @@ figure {
 .logo h1 {
   font-family: "shrikhand";
 }
+@media (min-width: 1440px) {
+  .logo {
+    width: 100%;
+  }
+}
+
 .index .footer {
   position: unset;
 }
