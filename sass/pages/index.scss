@@ -3,6 +3,7 @@
 //bloc principal
 .index {
     animation : loading-page 1.7s ease-out 0s ;
+        
 }
 
 //section position
@@ -169,11 +170,19 @@
                     left: 19%;
                     width: 6%;
                 }
+                @media (min-width:768px) and (max-width:1440px) {
+                    left: 36%;
+                    width: 10%;
+                }
             }
             &--2 {
                 @media (min-width:1440px) {
                     left: 41%;
                     width: 6%;
+                }
+                @media (min-width:768px) and (max-width:1440px) {
+                    left: 85%;
+                    width: 10%;
                 }
             }
             

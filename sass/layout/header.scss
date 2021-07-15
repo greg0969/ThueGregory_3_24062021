@@ -1,13 +1,13 @@
 .logo {
+    display: flex;
     text-align-last: center;
     padding-top: 20px;
-    width: 60%;
     text-align-last: start;
     h1 {
         font-family: "shrikhand";
     }
-    @media (min-width: 1440px) {
-        width: 100%;
+    @media (min-width: 768px) {
+        width: 50%;
         //margin-left: 20%;
     } 
 } 
