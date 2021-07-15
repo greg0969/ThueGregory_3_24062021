@@ -368,7 +368,7 @@ figure {
 
 .menu .carte:hover .checkbox {
   display: unset;
-  transform: scaleX(0px);
+  transform: scaleX();
   animation: checkbox 600ms ease-in;
 }
 
@@ -737,7 +737,7 @@ figure {
 @keyframes apparition-menu {
   0% {
     opacity: 0;
-    transform: scaleY(0%);
+    transform: scaleY(0);
   }
   33% {
     opacity: 0.2;
@@ -747,6 +747,6 @@ figure {
   }
   100% {
     opacity: 1;
-    transform: scaleY(100%);
+    transform: scaleY(1);
   }
 }

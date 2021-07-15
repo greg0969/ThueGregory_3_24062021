@@ -23,7 +23,7 @@
     .carte:hover {
         .checkbox {
             display: unset;
-            transform: scaleX(0px);
+            transform: scaleX();
             animation: checkbox 600ms ease-in ;
         }
     }
