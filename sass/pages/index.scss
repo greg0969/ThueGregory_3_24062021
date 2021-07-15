@@ -3,9 +3,6 @@
 //bloc principal
 .index {
     animation : loading-page 1.7s ease-out 0s ;
-    @media (min-width: 1440px) {
-        margin: auto;
-    }
 }
 
 //section position
@@ -72,6 +69,12 @@
         margin: 0;
         flex-wrap: wrap;
     }
+    h2 {
+        @media (min-width: 768px) and (max-width:1440px) {
+            text-align: center;
+            margin-bottom: 20px;     
+        }
+    }
     &__rond {
         background-color: $bg-color-primary;
         border-radius: 10em;
@@ -88,6 +91,7 @@
             width: 32%;
             margin: 60px 0 60px 10px;
             justify-content: space-between;
+            
         }
         &:hover {
             @include hover-fonctionnement ;
@@ -101,6 +105,9 @@
         border-radius: 20px;
         margin-bottom: 20px;
         box-shadow: $box-shadow-btn;
+        @media (min-width: 768px) and (max-width:1440px) {
+            width: 65%;  
+        }
         
         li {
             display: flex;
@@ -127,7 +134,7 @@
     flex-direction: column;
     background-color: $bg-color-secondary;
     padding: 50px 0 40px 0;
-    @media (min-width: 1440px) {
+    @media (min-width: 768px) {
         flex-direction: row;
         flex-wrap: wrap;
     }
@@ -143,6 +150,9 @@
     &__carte {
         @media (min-width: 1440px) {
             width: 22%;
+        }
+        @media (min-width: 768px) and (max-width:1440px) {
+            width: 50%;     
         }
         .notif-nouveau {
             border-style: none;

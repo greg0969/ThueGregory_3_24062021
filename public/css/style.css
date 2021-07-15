@@ -30,6 +30,12 @@ h3 {
   width: 90%;
 }
 
+@media (min-width: 768px) {
+  input {
+    font-size: 17px;
+  }
+}
+
 .reservation__btn p {
   -webkit-text-stroke: 0.5px;
 }
@@ -66,14 +72,14 @@ figure {
   width: 96%;
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 768px), (min-width: 1440px) {
   .fonctionnement h2 {
     width: 100%;
     text-align: center;
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 768px), (min-width: 1440px) {
   .restaurant h2 {
     width: 100%;
     text-align: center;
@@ -99,9 +105,9 @@ figure {
   align-self: center;
   margin-left: 25px;
 }
-@media (min-width: 1440px) {
+@media (min-width: 768px) {
   .btn-retour {
-    margin: 0 15em 0 50px;
+    width: 40%;
   }
 }
 
@@ -110,7 +116,7 @@ figure {
   justify-content: center;
   margin-top: 45px;
 }
-@media (min-width: 1440px) {
+@media (min-width: 768px) {
   .liste-menu__btn {
     width: 100%;
   }
@@ -169,6 +175,8 @@ figure {
 .logo {
   text-align-last: center;
   padding-top: 20px;
+  width: 60%;
+  text-align-last: start;
 }
 .logo h1 {
   font-family: "shrikhand";
@@ -184,7 +192,7 @@ figure {
 .footer--menu {
   margin-left: 20px;
 }
-@media (min-width: 1440px) {
+@media (min-width: 768px) {
   .footer--menu section {
     width: 100%;
   }
@@ -195,12 +203,12 @@ figure {
 }
 .footer h4 {
   font-family: "Shrikhand";
-  margin-bottom: 10px;
+  margin-bottom: 30px;
   padding-top: 25px;
   -webkit-text-stroke: 0;
   font-weight: unset;
 }
-@media (min-width: 1440px) {
+@media (min-width: 768px) {
   .footer h4 {
     display: flex;
     font-size: 25px;
@@ -219,9 +227,10 @@ figure {
     margin-left: 60px;
   }
 }
-@media (min-width: 1440px) {
+@media (min-width: 768px) {
   .footer div {
     flex-wrap: nowrap;
+    margin-left: 40px;
   }
 }
 .footer div i {
@@ -229,8 +238,8 @@ figure {
   width: 3%;
 }
 .footer p {
-  font-size: 17px;
-  padding-bottom: 5px;
+  font-size: 16px;
+  padding-bottom: 4%;
   width: 90%;
   -webkit-text-stroke: 0.1px;
 }
@@ -416,11 +425,6 @@ figure {
 .index {
   animation: loading-page 1.7s ease-out 0s;
 }
-@media (min-width: 1440px) {
-  .index {
-    margin: auto;
-  }
-}
 
 .position {
   flex-direction: row;
@@ -487,6 +491,12 @@ figure {
     flex-wrap: wrap;
   }
 }
+@media (min-width: 768px) and (max-width: 1440px) {
+  .fonctionnement h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
 .fonctionnement__rond {
   background-color: #9356dc;
   border-radius: 10em;
@@ -522,6 +532,11 @@ figure {
   margin-bottom: 20px;
   box-shadow: 0px 4px 3px 0px #d1d1d1;
 }
+@media (min-width: 768px) and (max-width: 1440px) {
+  .fonctionnement ul {
+    width: 65%;
+  }
+}
 .fonctionnement ul li {
   display: flex;
   flex-direction: row;
@@ -543,7 +558,7 @@ figure {
   background-color: #f6f6f6;
   padding: 50px 0 40px 0;
 }
-@media (min-width: 1440px) {
+@media (min-width: 768px) {
   .restaurant {
     flex-direction: row;
     flex-wrap: wrap;
@@ -561,6 +576,11 @@ figure {
 @media (min-width: 1440px) {
   .restaurant__carte {
     width: 22%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1440px) {
+  .restaurant__carte {
+    width: 50%;
   }
 }
 .restaurant__carte .notif-nouveau {
@@ -640,7 +660,7 @@ figure {
 .liste-menu__entrée {
   padding-top: 20px;
 }
-@media (min-width: 1440px) {
+@media (min-width: 768px) {
   .liste-menu img {
     height: 35em;
     object-fit: cover;
@@ -655,12 +675,13 @@ figure {
   border-top-right-radius: 25px;
   padding: 30px 0 50px 0;
 }
-@media (min-width: 1440px) {
+@media (min-width: 768px) {
   .menu {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     padding-bottom: 5em;
+    justify-content: center;
   }
 }
 .menu__section {
@@ -671,8 +692,10 @@ figure {
     width: 31%;
   }
 }
-.menu .nom-restaurant h2 {
-  font-family: "shrikhand";
+@media (min-width: 768px) {
+  .menu__section {
+    width: 80%;
+  }
 }
 .menu .carte {
   display: flex;
@@ -711,12 +734,15 @@ figure {
   margin-left: 20px;
   justify-content: space-between;
 }
-@media (min-width: 1440px) {
+.menu .nom-restaurant h2 {
+  font-family: "shrikhand";
+}
+@media (min-width: 768px) {
   .menu .nom-restaurant {
     width: 100%;
   }
 }
-@media (min-width: 1440px) and (min-width: 1440px) {
+@media (min-width: 768px) and (min-width: 768px), (min-width: 768px) and (min-width: 1440px) {
   .menu .nom-restaurant h2 {
     width: 100%;
     text-align: center;

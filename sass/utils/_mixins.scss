@@ -22,7 +22,7 @@
 
 @mixin responsive-h2 {
     h2 {
-        @media (min-width:1440px) {
+        @media (min-width:768px) , (min-width:1440px) {
             width: 100%;
             text-align: center;
         }
