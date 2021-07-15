@@ -774,7 +774,7 @@ figure {
 @keyframes apparition-menu {
   0% {
     opacity: 0;
-    transform: scaleY(0);
+    transform: scaleY(0%);
   }
   33% {
     opacity: 0.2;
@@ -784,6 +784,6 @@ figure {
   }
   100% {
     opacity: 1;
-    transform: translateY(1);
+    transform: scaleY(100%);
   }
 }
