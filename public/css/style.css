@@ -369,7 +369,7 @@ figure {
 
 .menu .carte:hover .checkbox {
   display: unset;
-  transform: scaleX(0);
+  transform: scaleX(1);
   animation: checkbox 600ms ease-in;
 }
 
