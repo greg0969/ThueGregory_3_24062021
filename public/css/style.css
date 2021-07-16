@@ -103,12 +103,13 @@ figure {
 .btn-retour {
   width: 25%;
   align-self: center;
-  margin-left: 25px;
+  margin-left: 10%;
   display: flex;
 }
 @media (min-width: 768px) {
   .btn-retour {
     width: 40%;
+    margin-right: 10%;
   }
 }
 
@@ -178,14 +179,10 @@ figure {
   text-align-last: center;
   padding-top: 20px;
   text-align-last: start;
+  width: 100%;
 }
 .logo h1 {
   font-family: "shrikhand";
-}
-@media (min-width: 768px) {
-  .logo {
-    width: 50%;
-  }
 }
 
 .index .footer {
