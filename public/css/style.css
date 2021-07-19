@@ -18,6 +18,16 @@ body .menu h3 {
   width: 15%;
   text-transform: uppercase;
 }
+@media (min-width: 1440px) {
+  body .menu h3 {
+    width: 4%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1440px) {
+  body .menu h3 {
+    width: 9%;
+  }
+}
 
 h2, p, h3, h4 {
   margin: 0;
