@@ -195,9 +195,6 @@ figure {
   text-align-last: start;
   width: 100%;
 }
-.logo h1 {
-  font-family: "shrikhand";
-}
 
 .index .footer {
   position: unset;
@@ -726,9 +723,6 @@ figure {
   flex-direction: row;
   margin-left: 20px;
   justify-content: space-between;
-}
-.menu .nom-restaurant h2 {
-  font-family: "shrikhand";
 }
 @media (min-width: 768px) {
   .menu .nom-restaurant {
