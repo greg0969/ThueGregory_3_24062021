@@ -742,10 +742,15 @@ figure {
   transform-origin: bottom;
   animation: apparition-menu 1.2s ease-in-out;
 }
+.menu__section figure:nth-child(4) {
+  opacity: 1;
+  transform-origin: bottom;
+  animation: apparition-menu 1.6s ease-in-out;
+}
 .menu__section figure:last-child {
   opacity: 1;
   transform-origin: bottom;
-  animation: apparition-menu 1.7s ease-in-out;
+  animation: apparition-menu 2s ease-in-out;
 }
 
 @keyframes apparition-menu {
