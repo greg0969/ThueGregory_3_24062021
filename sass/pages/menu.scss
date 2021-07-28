@@ -99,9 +99,13 @@
             @include animation-menu ;
             animation: apparition-menu 1.2s ease-in-out
         }
+        &:nth-child(4){
+            @include animation-menu ;
+            animation: apparition-menu 1.6s ease-in-out
+        }
         &:last-child {
             @include animation-menu;
-            animation: apparition-menu 1.7s ease-in-out ;
+            animation: apparition-menu 2s ease-in-out ;
         } 
     }
 }
