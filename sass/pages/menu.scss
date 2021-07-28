@@ -89,17 +89,20 @@
 
 // animation qui fait apparaître les menus progressivement
 .menu {
-    &__entree {
-        @include animation-menu ;
-        animation: apparition-menu 1.7s ease-in-out;
-    }
-    &__plat {
-        @include animation-menu ;
-        animation: apparition-menu 1.5s ease-in-out  ;
-    }
-    &__dessert {
-        @include animation-menu ;
-        animation: apparition-menu 1s ease-in-out ;
+    &__section figure { 
+        &:nth-child(2) {
+            @include animation-menu;
+            animation: apparition-menu 0.7s ease-in-out ;
+            
+        }
+        &:nth-child(3) {
+            @include animation-menu ;
+            animation: apparition-menu 1.2s ease-in-out
+        }
+        &:last-child {
+            @include animation-menu;
+            animation: apparition-menu 1.7s ease-in-out ;
+        } 
     }
 }
 
